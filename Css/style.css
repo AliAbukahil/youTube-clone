@@ -13,8 +13,8 @@
   width: 100vw;
   height: 6vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: auto;
+  /*   justify-content: space-evenly;
+  align-items: auto; */
   /*   flex-direction: row-reverse; */
 }
 
@@ -22,4 +22,9 @@
   justify-content: space-between;
   align-items: flex-end;
   display: inline;
+}
+
+.user_image {
+  width: 32px;
+  height: auto;
 }
