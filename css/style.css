@@ -99,3 +99,41 @@ i {
   padding-left: 10px;
   font-size: 1.15em;
 }
+
+.fl-right {
+  float: right;
+  position: relative;
+  margin-right: 2rem;
+}
+
+#profile {
+  margin-left: auto;
+}
+
+#main {
+  margin-right: 0px;
+}
+
+#sidebar {
+  float: left;
+  width: 14%;
+  height: 100%;
+  padding-left: 0px;
+  padding-top: 41px;
+  margin-left: 0px;
+  overflow: scroll;
+  position: fixed;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#sidebar li {
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: -webkit-baseline-middle;
+}
