@@ -4,49 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>youTube Clone Page</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="./css/fontawesome-free-5.15.2-web/css/all.css"
     />
+    <title>youtube</title>
   </head>
   <body>
-    <section class="top-menu">
-      <!-- The Master head Container -->
-      <div class="menu-top-container">
-        <!-- the Hamburger Menu-->
-        <div class="btnHamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <!-- The YouTube Logo div -->
-        <div>
-          <span class="logo"
-            ><img src="./img/youtube-logo-3-3.png" alt="YouTube Logo"
-          /></span>
-        </div>
-        <!-- THe search section with the Button && microphone -->
-        <div class="search">
-          <input type="text" placeholder="Search" />
-          <button class="search"><i class="fas fa-search"></i></button>
-          <span class="mic"><i class="fas fa-microphone"></i></span>
-        </div>
-        <!-- The section on the right from Top -->
-        <div class="right-top">
-          <span class="topRightIcon" name="live-video"
-            ><i class="fas fa-video"></i
-          ></span>
-          <span class="topRightIcon" name="apps"
-            ><i class="fas fa-th"></i
-          ></span>
-          <span class="topRightIcon"><i class="fas fa-bell"></i></span>
-          <!-- <span class="user_image"
-            ><img src="./img/user_image.jpg" alt="user-image"
-          /></span> -->
-        </div>
+    <nav>
+      <ul>
+        <li><i id="hamburger" class="fas fa-bars"></i></li>
+        <li>
+          <img
+            src="img/youtube-logo-3-3.png"
+            alt=""
+          />
+        </li>
+        <li id="search-li">
+          <input type="text" placeholder="Search" id="search" />
+        </li>
+        <li>
+          <button><i class="fas fa-search"></i></button>
+        </li>
+        <li class="fl-right expandable" id="profile">
+          <i class="fas fa-user fa-1x mob-disappear"></i>
+        </li>
+        <li class="fl-right expandable">
+          <i class="fas fa-bell fa-1x mob-disappear"></i>
+        </li>
+        <li class="fl-right expandable">
+          <i class="fas fa-th fa-1x mob-disappear"></i>
+        </li>
+        <li class="fl-right expandable">
+          <i class="fas fa-video fa-1x mob-disappear"></i>
+        </li>
+      </ul>
+    </nav>
+    <div id="main">
+      <div id="sidebar">
+        <ul>
+          <li>
+            <i class="fas fa-home"></i><a href="#">Home</a>
+          </li>
+          <li>
+            <i class="fas fa-fire"></i><a href="#">Trending</a>
+          </li>
+          <li>
+            <i class="fas fa-archive"></i><a href="#">Subscriptions</a>
+          </li>
+          <hr />
+          <li class="sidebar-section"><a href="#">Library</a></li>
+          <li>
+            <i class="fas fa-history"></i><a href="#">History</a>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i><a href="#">Your videos</a>
+          </li>
+          <li>
+            <i class="fas fa-tag"></i><a href="#">Watch Later</a>
+          </li>
+          <li>
+            <i class="fas fa-thumbs-up"></i><a href="#">Liked Videos</a>
+          </li>
+          <li>
+            <i class="fas fa-list"></i><a href="#">Show more</a>
+          </li>
+          <li>
+            <i class="fas fa-list"></i><a href="#">HTML</a>
+          </li>
+          <li>
+            <i class="fas fa-list"></i><a href="#">Songs I Like</a>
+          </li>
+          <li>
+            <i class="fas fa-list"></i><a href="#">React</a>
+          </li>
+          <hr />
       </div>
-    </section>
+      <div id="video-grid">
+        <div class="vid-section-header">
+          <h2>Trending</h2>
+        </div>
+        <div class="vid-section-row">
+          <div class="video-item">
+            <img
+              src="img/Screenshot from 2021-03-09 11-10-04.png"
+              alt="video image"
+            />
+            <h2>World's Lightest -inch Laptop (Guinness Record) </h2>
+            <h3>
+              Abukahil <i class="fas fa-check-circle"></i><br />790K views
+              | 1 day ago
+            </h3>
+          </div>
+          <div class="video-item">
+            <img
+              src="./img/Screenshot from 2021-03-09 11-13-02.png"
+              alt="video image"
+            />
+            <h2>Look What OnePLus Just Sent Over</h2>
+            <h3>
+              Abukahil<i class="fas fa-check-circle"></i><br />1.1M 
+              views | 2 days ago
+            </h3>
+          </div>
+          <div class="video-item">
+            <img
+              src="./img/Screenshot from 2021-03-09 11-13-46.png"
+              alt="video image"
+            />
+            <h2>This Takes Things to Another Level</h2>
+            <h3>
+              Abukahil <i class="fas fa-check-circle"></i><br />1M
+              views | 1 week ago
+            </h3>
+          </div>
+          <div class="video-item">
+            <img
+              src="./img/Screenshot from 2021-03-09 11-15-02.png"
+              alt="video image"
+            />
+            <h2>How Bad is a Refurbished iPhone...?</h2>
+            <h3>
+              Abukahil <i class="fas fa-check-circle"></i><br />1.1M views | 1
+              week ago
+            </h3>
+            
+          </div>
+          <hr />
+        </div>
+        
+    </div>
   </body>
 </html>
