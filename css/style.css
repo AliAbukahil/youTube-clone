@@ -137,3 +137,51 @@ i {
   padding-bottom: 10px;
   vertical-align: -webkit-baseline-middle;
 }
+
+#siderbar hr {
+  padding: 0px;
+  margin: 0px;
+}
+
+#sidebar li i {
+  margin-right: 15px;
+}
+
+#siderbar li img {
+  float: left;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#siderbar li a {
+  text-decoration: none;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: rgb(66, 65, 65);
+}
+
+.sidebar-clickable:hover {
+  background-color: #ddd !important;
+  cursor: pointer;
+}
+
+.sidebar-clickable i {
+  width: 16px;
+}
+
+.sidebar-section {
+  font-weight: bold;
+}
+
+#video-grid {
+  padding-top: 41px;
+  float: right;
+  width: 80%;
+}
+
+.vid-section-header {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding-left: 1%;
+}
