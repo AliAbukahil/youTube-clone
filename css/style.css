@@ -73,3 +73,29 @@ nav button {
 .expandable ul li {
   clear: both;
 }
+
+.expandable ul li a {
+  margin: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+
+.expandable ul li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+i {
+  margin-top: 5;
+  color: gray;
+}
+
+#search {
+  margin-left: 100px;
+  width: 35rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  padding-left: 10px;
+  font-size: 1.15em;
+}
