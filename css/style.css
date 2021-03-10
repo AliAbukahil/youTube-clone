@@ -4,25 +4,34 @@
   padding: 0;
 }
 
-.top-menu {
-  border: 2px red dashed;
-  width: 100vw;
-  height: 6vh;
-}
-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  height: 100%;
+  margin-left: 0px;
 }
 
-/* 
-.right-top ul li {
-  justify-content: space-between;
-  align-items: flex-end;
-  display: inline;
+section {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0 4px 2px -2px lightgrey;
+  overflow: visible;
+  /*   z-index: 100; */
+}
+section * {
+  float: left;
 }
 
-.user_image {
-  width: 32px;
-  height: auto;
-} */
+section img {
+  width: 110px;
+  margin-left: 20px;
+}
+
+section i {
+  color: gray;
+  margin-left: 5px;
+  cursor: pointer;
+}
