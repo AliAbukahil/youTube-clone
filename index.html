@@ -4,136 +4,424 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube CLone</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="./css/fontawesome-free-5.15.2-web/css/all.css"
     />
-    <title>youtube</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><i id="hamburger" class="fas fa-bars"></i></li>
-        <li>
+    <!-- Nav bar top-left-side -->
+
+    <header class="header">
+      <div class="menu">
+        <a href="#">
           <img
-            src="img/youtube-logo-3-3.png"
-            alt=""
+            src="./img/Hamburger--menu.svg"
+            alt="BurgerMenu"
+            class="hamburger"
           />
-        </li>
-        <li id="search-li">
-          <input type="text" placeholder="Search" id="search" />
-        </li>
-        <li>
-          <button><i class="fas fa-search"></i></button>
-        </li>
-        <li class="fl-right expandable" id="profile">
-          <i class="fas fa-user fa-1x mob-disappear"></i>
-        </li>
-        <li class="fl-right expandable">
-          <i class="fas fa-bell fa-1x mob-disappear"></i>
-        </li>
-        <li class="fl-right expandable">
-          <i class="fas fa-th fa-1x mob-disappear"></i>
-        </li>
-        <li class="fl-right expandable">
-          <i class="fas fa-video fa-1x mob-disappear"></i>
-        </li>
-      </ul>
-    </nav>
-    <div id="main">
-      <div id="sidebar">
-        <ul>
-          <li>
-            <i class="fas fa-home"></i><a href="#">Home</a>
-          </li>
-          <li>
-            <i class="fas fa-fire"></i><a href="#">Trending</a>
-          </li>
-          <li>
-            <i class="fas fa-archive"></i><a href="#">Subscriptions</a>
-          </li>
-          <hr />
-          <li class="sidebar-section"><a href="#">Library</a></li>
-          <li>
-            <i class="fas fa-history"></i><a href="#">History</a>
-          </li>
-          <li>
-            <i class="fas fa-clock"></i><a href="#">Your videos</a>
-          </li>
-          <li>
-            <i class="fas fa-tag"></i><a href="#">Watch Later</a>
-          </li>
-          <li>
-            <i class="fas fa-thumbs-up"></i><a href="#">Liked Videos</a>
-          </li>
-          <li>
-            <i class="fas fa-list"></i><a href="#">Show more</a>
-          </li>
-          <li>
-            <i class="fas fa-list"></i><a href="#">HTML</a>
-          </li>
-          <li>
-            <i class="fas fa-list"></i><a href="#">Songs I Like</a>
-          </li>
-          <li>
-            <i class="fas fa-list"></i><a href="#">React</a>
-          </li>
-          <hr />
+        </a>
+        <a href="#">
+          <img
+            src="./img/YouTube-Logo.png"
+            alt="YouTube"
+            class="youtube-logo"
+          />
+        </a>
       </div>
-      <div id="video-grid">
-        <div class="vid-section-header">
-          <h2>Unbox Therapy</h2>
+      <!-- Nav bar middle side -->
+
+      <form class="search-bar">
+        <input type="search" placeholder="Search" class="search-input" />
+        <button type="submit" class="search-btn">
+          <img src="./img/search.svg" alt="search tool" />
+        </button>
+        <img src="./img/mic.svg" alt="mic" />
+      </form>
+      <!-- Nav bar top-right-side -->
+      <div class="top-right-side">
+        <a href="#">
+          <img src="./img/create.svg" alt="create" />
+        </a>
+        <a href="#">
+          <img src="./img/apps.svg" alt="apps" />
+        </a>
+        <a href="#">
+          <img src="./img/notification.svg" alt="notification" />
+        </a>
+        <a href="#">
+          <img
+            src="./img/user_image.jpg"
+            alt="profile-photo"
+            class="profile-circle"
+          />
+        </a>
+      </div>
+    </header>
+    <!-- data on th left column -->
+    <!-- The first square -->
+    <div class="column-left">
+      <div class="catagories">
+        <div class="categories-section">
+          <span class="category">
+            <img src="./img/home.svg" alt="Home" class="icons" />
+            <span>Home</span>
+          </span>
+
+          <span class="category">
+            <img src="./img/trending.svg" alt="Trending" class="icons" />
+            <span>Trending</span>
+          </span>
+
+          <span class="category">
+            <img
+              src="./img/subscriptions.svg"
+              alt="subscriptions"
+              class="icons"
+            />
+            <span>Subscriptions</span>
+          </span>
+          <br />
+          <hr />
         </div>
-        <div class="vid-section-row">
-          <div class="video-item">
-            <img
-              src="img/Screenshot from 2021-03-09 11-10-04.png"
-              alt="video image"
-            />
-            <h2>World's Lightest -inch Laptop (Guinness Record) </h2>
-            <h3>
-              Abukahil <i class="fas fa-check-circle"></i><br />790K views
-              | 1 day ago
-            </h3>
+        <!-- The second square -->
+        <div class="catagories">
+          <div class="catagories-section">
+            <span class="category">
+              <img src="./img/library.svg" alt="library" class="icons" />
+              <span>Library</span>
+            </span>
+
+            <span class="category">
+              <img src="./img/history.svg" alt="History" class="icons" />
+              <span>History</span>
+            </span>
+
+            <span class="category">
+              <img
+                src="./img/your_videos.svg"
+                alt="Your Videos"
+                class="icons"
+              />
+              <span>Your videos</span>
+            </span>
+
+            <span class="category">
+              <img
+                src="./img/watch_later-.svg"
+                alt="Watch Later"
+                class="icons"
+              />
+              <span>Watch later</span>
+            </span>
+
+            <span class="category">
+              <img src="./img/like.svg" alt="Liked videos" class="icons" />
+              <span>Liked videos</span>
+            </span>
+            <div class="category">
+              <i class="fas fa-chevron-down icon"></i> Show more
+            </div>
           </div>
-          <div class="video-item">
-            <img
-              src="./img/Screenshot from 2021-03-09 11-13-02.png"
-              alt="video image"
-            />
-            <h2>Look What OnePLus Just Sent Over</h2>
-            <h3>
-              Abukahil<i class="fas fa-check-circle"></i><br />1.1M 
-              views | 2 days ago
-            </h3>
+        </div>
+        <hr />
+        <div>
+          <br />
+          <!-- The third square -->
+          <h3>SUBSCRIPTIONS</h3>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>Keep It Underground
           </div>
-          <div class="video-item">
-            <img
-              src="./img/Screenshot from 2021-03-09 11-13-46.png"
-              alt="video image"
-            />
-            <h2>This Takes Things to Another Level</h2>
-            <h3>
-              Abukahil <i class="fas fa-check-circle"></i><br />1M
-              views | 1 week ago
-            </h3>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>Elzero Web School
           </div>
-          <div class="video-item">
-            <img
-              src="./img/Screenshot from 2021-03-09 11-15-02.png"
-              alt="video image"
-            />
-            <h2>How Bad is a Refurbished iPhone...?</h2>
-            <h3>
-              Abukahil <i class="fas fa-check-circle"></i><br />1.1M views | 1
-              week ago
-            </h3>
-            
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>MercifulServant
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>Joe Show - جو شو
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>freeCodeCamp.org
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>Udacity
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>فِكر تاني
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>JerryRigEverything
+          </div>
+          <div class="category">
+            <i class="fas fa-user-circle icon"></i>The Graham Norton Show
+          </div>
+          <div class="category">
+            <i class="fas fa-chevron-down icon"></i> Show 47 more
           </div>
           <hr />
         </div>
-        
+        <div>
+          <br />
+          <h3>MORE FROM YOUTUBE</h3>
+          <div class="category">
+            <i class="fab fa-youtube icon"></i>Youtube Premuim
+          </div>
+          <div class="category">
+            <i class="fas fa-film icon"></i>Movies and Shows
+          </div>
+          <div class="category"><i class="fas fa-gamepad icon"></i>Gaming</div>
+          <div class="category">
+            <i class="fas fa-broadcast-tower icon"></i> Live
+          </div>
+          <div class="category">
+            <i class="far fa-lightbulb icon"></i>Learning
+          </div>
+          <div class="category"><i class="fas fa-trophy icon"></i>Sports</div>
+
+          <hr />
+        </div>
+      </div>
+
+      <div class="yt-profile">
+        <div class="cover-photo">
+          <img
+            src="./img/Screenshot from 2021-03-09 11-23-06.png"
+            alt="cover-photo"
+          />
+        </div>
+        <div class="channel-info">
+          <div class="channel-top">
+            <div class="channel-top-left">
+              <div class="profile-photo">
+                <img src="./img/channel_logo.jpg" alt="channel logo" />
+              </div>
+            </div>
+            <div class="channel-top-middle">
+              <h1>Unbox Therapy<i class="fas fa-check-circle"></i></h1>
+              <p>17.8M subscribers</p>
+            </div>
+            <div class="channel-top-right">
+              <button class="subscribe-btn">SUBSCRIBE</button>
+            </div>
+          </div>
+          <!-- navigation -->
+          <div class="navigation">
+            <a href="#">HOME</a>
+            <a href="#" class="video-line">VIDEOS</a>
+            <a href="#">PLAYLISTS</a>
+            <a href="#">COMMUNITY</a>
+            <a href="#">STORE</a>
+            <a href="#">CHANNELS</a>
+            <a href="#">ABOUT</a>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+        <!-- videos Section -->
+        <div class="videos">
+          <section class="video-section">
+            <article>
+              <a href="#" class="thumnail" data-duration="9:52">
+                <img
+                  src="./img/mqdefault_6s.webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >World's Lightest 16-inch Laptop (Guinness Record)</a
+                  >
+                  <div class="video-metadata">
+                    <span>973K views</span> • <span> 1 week ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="12:21">
+                <img src="./img/hqdefault.webp" alt="iframe" />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >Look What OnePlus Just Sent Over...</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.4M views</span> • <span>1 week ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="11:53">
+                <img
+                  src="./img/hqdefault (1).webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >This Takes Things to Another Level...</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.1M views</span> • <span>3 Weeks ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="16:28">
+                <img
+                  src="./img/hqdefault (2).webp"
+                  alt="iframe"
+                  class="thumnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video.details">
+                  <a href="#" class="video-title"
+                    >How Bad is a Refurbished iPhone...?</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.2M views</span> • <span>3 Weeks ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="13:23">
+                <img
+                  src="./img/hqdefault (3).webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >Why is EVERYONE Buying These Smartphones?</a
+                  >
+                  <div class="video-metadata">
+                    <span>960K views</span> •
+                    <span> 3 Week Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="13:02">
+                <img
+                  src="./img/hqdefault (4).webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >A New Flagship Challenger Emerges... 🚀</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.7M views</span> •
+                    <span>3 Week Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="26:25">
+                <img
+                  src="./img/hqdefault a.webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >Sony's New Ultra Flagship Smartphone...</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.1 views</span> •
+                    <span>1 Month Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="14:15">
+                <img
+                  src="./img/hqdefault b.webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >Cosmos Max is my BIGGEST Android Device...</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.2M views</span> •
+                    <span>1 Month Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="12:14">
+                <img
+                  src="./img/hqdefault c.webp"
+                  alt="iframe"
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >Sony PlayStation 5 BLACK Edition...</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.3M views</span> •
+                    <span>1 Month Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="11:17">
+                <img
+                  src="./img/hqdefault d.webp"
+                  alt=""
+                  class="thumbnail-img"
+                />
+              </a>
+              <div class="video-bottom-section">
+                <div class="video-detail">
+                  <a href="#" class="video-title"
+                    >The ULTIMATE $40,000 Gaming PC Setup</a
+                  >
+                  <div class="video-metadata">
+                    <span>1.2M views</span> •
+                    <span>1 Month Ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
